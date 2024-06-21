@@ -1,4 +1,7 @@
 @import "../css/style.css";
-@import "../css/burger_menu.css";
-@import "../css/cards.css";
-@import "../css/map.css";
+@import "../css/header/header.css";
+@import "../css/header/burger_menu.css";
+@import "../css/main/cards.css";
+@import "../css/main/map.css";
+@import "../css/main/video-container.css";
+@import "../css/footer/footer.css";

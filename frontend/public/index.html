@@ -2,8 +2,8 @@
 <html>
 
 <head>
-  <meta charset="utf_8">
-  <meta name="viewport" content="width=device_width">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>aquastok</title>
   <link href="/frontend/src/index.css" rel="stylesheet" type="text/css" />
 </head>
@@ -11,8 +11,8 @@
 <body>
   
   <header class="header">
-    <div class="header-container">
-      <h1 class="header-title"><img src="/frontend/src/images/logo-2.webp"></h1>
+    <div class="header-container">  
+      <h1 class="header-title"><img class="header-image" src="/frontend/src/images/logo-2.webp" alt="Логотип сайта"></h1>
       <!--<nav class="main-menu_nav">
         <a href="#section1" class="main-menu_link">1 Главная</a>
         <a href="#section2" class="main-menu_link">2 О компании</a>
@@ -45,6 +45,7 @@
     </div>
   </header>
   <main>
+    
     <div class="card-container">
       <div class="card">
         
@@ -87,15 +88,46 @@
         
       </div>
     </div>
-    <div id="map" class="rf-map">
+    <div class="map-container">
+      <div id="map" class="rf-map">
         <div class="district"><b></b><span></span></div>
         <div class="close-district">&times;</div>
-        <div id="RU-SAR" class="district-text">
-            <div class="saratov"></div>    
+        <div id="RU-NVS" class="district-text">
+          <div class="ru-nvs"></div>
         </div>
-        <div id="RU-SA" class="district-text">
-            <div class="saha"></div>
-        </div>    
+        <div id="RU-MOW" class="district-text">
+          <div class="district-text-map">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ad02f33984c150c2138c6291459149432087d5c91682959a7ad88dc08ffedf899&amp;width=500&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+          </div>
+          <div class="district-text-box">
+            <div class="district-text-title">Заголовок</div>
+            <div class="district-text-description">описание</div>
+          </div>
+        </div>
+        <div id="RU-MOS" class="district-text">
+          <div class="ru-mos"></div>
+        </div>
+        <div id="RU-TA" class="district-text">
+          <div class="ru-ta"></div>
+        </div>
+        <div id="RU-NIZ" class="district-text">
+          <div class="ru-niz"></div>
+        </div>
+        <div id="RU-KDA" class="district-text">
+          <div class="ru-kda"></div>
+        </div>
+        <div id="RU-SPE" class="district-text">
+          <div class="ru-spe"></div>
+        </div>
+        <div id="RU-LEN" class="district-text">
+          <div class="ru-len"></div>
+        </div>
+        <div id="RU-SVE" class="district-text">
+          <div class="ru-sve"></div>
+        </div>
+        <div id="RU-AD" class="district-text">
+          <div class="ru-ad"></div>
+        </div>
         <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.2" baseProfile="tiny" x="0px" y="0px" viewBox="0 0 1000 600" xml:space="preserve" xmlns:xml="http://www.w3.org/XML/1998/namespace"> 
             <path d="m 130.24729,259.26463 -0.71301,-1.3323 -0.83965,1.13893 -1.20312,0.61639 -0.3652,1.98343 -2.7566,-1.20341 -1.29507,1.2557 -1.79887,-1.96928 -0.51738,2.08913 -1.70104,0.51357 0.48353,2.36036 1.41813,-1.06374 1.07846,1.34199 2.31013,-0.11587 0.63117,-1.4221 0.77636,1.28888 1.63087,-0.86752 1.60105,1.08107 2.52028,-0.21377 0.38854,-1.63667 -0.76508,-2.45949 0.30997,-0.96605 c -0.75062,0.0982 -0.83803,-0.13605 -1.19347,-0.41925 z" data-title="Москва" data-code="RU-MOW"></path>
             <path d="m 136.30673,181.67516 -2.95955,-0.98651 -3.94605,0.98651 -0.98652,3.94606 0.98652,2.95954 3.94605,1.97303 2.95955,-1.97303 1.97302,-2.95954 -1.97302,-3.94606 z" data-title="Санкт-Петербург" data-code="RU-SPE"></path>
@@ -188,6 +220,10 @@
             <path d="m68.06,338.65l-0.87,1.42l0.62,0.39l0.75,1.16l1.87,0.77l0.25,1.16l3,3.35l3.5,-3.61l0.25,-0.26l0.5,-0.26l0.37,-0.13l0.5,-0.39l0.75,-0.39l-0.62,-3.61l0.37,-0.52l0.37,-0.39l0.5,-0.39l0.37,-0.52l0.62,-0.52l0.37,0.13l1.87,0.26l-0.12,-2.58l0.62,-0.13l1,-0.13l0.5,0l0.5,-0.13l0.37,0l0.37,0l0.37,-0.13l0.25,0l0.37,-0.13l1.5,-0.13l0.25,-0.64l0.12,-0.52l0.37,-0.77l0.12,-0.39l0.25,-0.52l0.25,-0.39l0.12,-0.26l0.25,-0.26l0.25,-0.26l0.37,-0.52l-3,-1.29l0,-1.55l0,-1.42l0,-0.52l-1.75,-2.19l-0.5,-0.64l-0.5,-1.42l-0.12,-0.9l-0.12,-0.26l-0.12,-0.39l-0.12,-0.26l0,-0.52l-1.62,-0.9l-0.75,-0.52l-0.37,-0.39l-0.62,-0.77l-0.5,-0.64l-0.62,-0.64l-0.37,-0.52l-0.62,1.67l-1,0.77l-0.37,0.64l-1.12,0.26l-1.75,0.26l-0.87,1.42l-0.87,1.29l-0.5,0.77l-1,0.77l0.75,1.03l-0.87,1.42l-1,0.77l0.75,1.03l-0.5,0.64l-0.25,1.29l-1.12,0.26l-0.62,0l-0.5,0.77l-0.25,1.16l0.12,1.16l-0.25,1.29l-1.12,0.26l0,0.52l0.12,0.64l0.25,1.16l-0.62,0.13l0.87,1.55l-0.25,1.29l0,0.52" data-title="Луганская Народная Республика" data-code="RU-LUG"/>    
         </svg>
         <!--<div class="district-links"></div>-->
+    </div>
+    </div>
+    <div class="video-container">
+      <iframe class="video-iframe" src="https://www.youtube.com/embed/LNLbY-hHANM?si=68dJKt7lCCZxsACB&vq=fhd1080&controls=2&modestbranding=1&hl=ru&fs=0&loop=1&showinfo=0&rel=0&origin=1&enablejsapi=1" title="Команда компании 'Аквасток'" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
   </main>
   <footer class="footer">

@@ -33,16 +33,20 @@
 .rf-map .district {
     display: none;
 }
+
+
+.open {
+    border-radius: 5px;
+}
 .rf-map.open .district b {
     top: 0;
     left: 0;
     border-radius: 0;
     width:100%;
     height: 100%;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);    
 }
 .rf-map.open .district span {
-    color: #FFF;
+    color: #f6f6f6;
 }
 .rf-map svg {
     width: 100%;
@@ -50,7 +54,7 @@
     filter: drop-shadow(0 5px 12px rgba(0, 0, 0, 0.5));    
 }
 .rf-map path {
-    stroke: #FFFFFF;
+    stroke: #f6f6f6;
     stroke-width: 1;
     stroke-linejoin: round; 
 }
@@ -71,9 +75,10 @@
     height: calc(100% - 90px);
     padding: 0 20px;
     overflow: auto;
-    color: #FFF;
+    color: #f6f6f6;
     font-size: 13px;
     font-family: Verdana, sans-serif;   
+    
 }
 .rf-map .close-district {
     opacity: 0;
@@ -88,7 +93,7 @@
     height: 40px;
     line-height: 1;
     font-size: 40px;
-    color: #fff;
+    color: #f6f6f6;
     cursor: pointer;
     transition: opacity 1s;
     pointer-events: none;
@@ -239,4 +244,23 @@
 .rf-map [data-code="RU-SVE"]{
     fill: #D52B1E;
     cursor: pointer;
+}
+
+.district-text{
+    display: inline-flex;
+    justify-content: space-between;
+    justify-content:left;
+}
+.district-text-map{
+    width: 40%;
+}
+.district-text-box{
+    margin-top: 0;
+    text-align: center;
+    width: 40%;
+    display: block;
+}
+
+.district-text-box-title{
+    text-align: center;
 }

@@ -20,9 +20,23 @@ function burgerMenu(selector){
 
     if (menu.hasClass('burger-menu_active')){
       $('main').css('margin-left', document.querySelector('.burger-menu_nav').offsetWidth + 'px')
+      if ($(window).scrollTop() >= 35){
+        setTimeout(() =>{
+          $('.header-title').addClass('header_fixed');
+        }, 350)
+      }else{
+        $('.header-title').addClass('header_fixed');
+      }
     } else {
+      $('main').css('margin-left', '0px');
+      if ($(window).scrollTop() >= 35){
+        $('.header-title').removeClass('header_fixed');
+      }else{
+        setTimeout(() =>{
+          $('.header-title').removeClass('header_fixed');
+        }, 350)
+      }
       $('body').css('overflow', 'visible');
-      $('main').css('margin-left', '0px')
     }
   }
 }
