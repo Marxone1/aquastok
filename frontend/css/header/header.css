@@ -5,9 +5,9 @@ header {
     background-color: #242a37;
     z-index: 10;
     padding: 0;
-    max-height: 90px;
     min-height: 90px;
     box-shadow: 0px 0px 5px 5px rgba(36, 42, 55, 0.9);
+    max-height: 110px;
 }
 header *{
     border-radius: 5px;
@@ -19,14 +19,12 @@ header *{
   
 .header-title{
     margin-left: 80px;
-    max-width: 15vw;
     z-index: 40;
     transition: 0.5s;
 }
 
 .header-image{
     width: 17vw;
-    max-width: 228px;
 }
 
 .header_fixed {
