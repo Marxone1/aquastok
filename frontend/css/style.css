@@ -2,6 +2,9 @@ html {
   height: 100%;
   width: 100%;
   overflow-x: none;
+  scroll-behavior:smooth;
+  background-color: #242a37;
+  scroll-behavior: smooth;
 }
 body{
   margin: 0; 
@@ -13,7 +16,7 @@ body{
   box-shadow:inset 0px 0px 10px 5px rgba(36, 42, 55, 0.9)
 }
 html, body {
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 main{
   position: block;
@@ -147,3 +150,40 @@ header li ul li:hover ul {
     filter: brightness(0.7);
   }
 }*/
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+.scrollbar::-webkit-scrollbar {
+  background-color:#fff;
+  width:16px
+}
+
+/* background of the scrollbar except button or resizer */
+.scrollbar::-webkit-scrollbar-track {
+  background-color:#fff
+}
+.scrollbar::-webkit-scrollbar-track:hover {
+  background-color:#f4f4f4
+}
+
+/* scrollbar itself */
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color:#242a37;
+  border-radius:16px;
+  border:1px solid #f6f6f6
+}
+.scrollbar::-webkit-scrollbar-thumb:hover {
+  background-color:#a0a0a5;
+  border:1px solid #242a37
+}
+
+/* set button(top and bottom of the scrollbar) */
+.scrollbar::-webkit-scrollbar-button {display:none}
+
+/* div box */
+.scrollbar {
+  min-width: 150px;
+  background: #f6f6f6;
+  overflow-y: scroll}
